@@ -14,8 +14,16 @@
         <input type="text" id="add-item-input" class="w-full rounded-full bg-inherit text-center outline-none capitalize font-bold placeholder:text-zinc-600" placeholder="What ToDo Today ?">
         <svg id="add-item-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-        </svg>        
+        </svg>
       </div>
+      <section class="flex gap-4">
+        <p id="color-picker" data-bg = "bg-red-400" class="bg-red-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+        <p id="color-picker" data-bg = "bg-emerald-400" class="bg-emerald-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+        <p id="color-picker" data-bg = "bg-orange-400" class="bg-orange-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+        <p id="color-picker" data-bg = "bg-violet-400" class="bg-violet-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+        <p id="color-picker" data-bg = "bg-pink-400" class="bg-pink-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+        <p id="color-picker" data-bg = "bg-sky-400" class="bg-sky-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+      </section>
       <ul id="todo-items-wrapper" class="flex flex-col gap-4 w-5/6 h-full p-4 rounded-3xl overflow-auto ring-2 ring-white bg-zinc-600 dark:bg-zinc-700"></ul>
     </section>
   </body>
