@@ -4,3 +4,9 @@
 
 ## Used tech
 [![My Skills](https://skillicons.dev/icons?i=html,css,tailwind,js,vite)](https://skillicons.dev)
+
+## Preview 🖼️
+<img src="https://github.com/Ali-boorboor/ToDo-list/blob/main/ToDo-list-Dark.png">
+<img src="https://github.com/Ali-boorboor/ToDo-list/blob/main/ToDo-list-Light.png">
+<img src="https://github.com/Ali-boorboor/ToDo-list/blob/main/ToDo-list-Error-Modal.png">
+<img src="https://github.com/Ali-boorboor/ToDo-list/blob/main/ToDo-list-Hide-ToDos.png">
