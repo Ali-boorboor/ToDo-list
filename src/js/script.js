@@ -87,8 +87,8 @@ function removeTodo (dataArray = getLocalData()) {
   const removeBtn = $.querySelectorAll("#todo-list-item__remove-icon");
   removeBtn.forEach(todo => {
     todo.addEventListener("click", function () {
-      this.parentElement.remove();
       const selectedTodo = dataArray.findIndex(data => data.title === this.previousElementSibling.textContent);
+      this.parentElement.remove();
       dataArray.splice(selectedTodo, 1);
       setToLocalStorage(dataArray);
     });
