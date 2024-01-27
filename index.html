@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo-list</title>
+    <script type="module" crossorigin src="/ToDo-list/assets/index-C1xk7plz.js"></script>
+    <link rel="stylesheet" crossorigin href="/ToDo-list/assets/index-jgz-JLwy.css">
+  </head>
+  <body class="flex flex-col gap-4 justify-center items-center h-screen bg-sky-400 dark:bg-gray-500">
+    <p id="alert-modal" class="bg-red-600 text-white p-2 rounded-full ring-2 ring-black font-bold text-xl hidden">Please Enter A Title To Add To List</p>
+    <section class="flex flex-col items-center gap-4 overflow-hidden ring-2 ring-white bg-gray-500 dark:bg-zinc-600 p-4 w-full max-w-[60rem] min-w-72 h-full max-h-96 rounded-3xl text-center">
+      <h1 class="w-5/6 dark:text-white text-black bg-sky-400 dark:bg-gray-500 ring-2 ring-white text-3xl font-bold rounded-full p-2">ToDo List</h1>
+      <div class="flex items-center justify-center w-5/6 bg-sky-400 text-black dark:bg-gray-500 dark:text-white ring-2 ring-white rounded-full p-2">
+        <input type="text" id="add-item-input" class="w-full rounded-full bg-inherit text-center outline-none capitalize font-bold placeholder:text-zinc-600" placeholder="What ToDo Today ?">
+        <svg id="add-item-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+      </div>
+      <section class="flex gap-4 items-center justify-around w-5/6 max-[780px]:flex-col">
+        <p id="remove-all-btn" class="cursor-pointer font-bold bg-red-400 p-2 rounded-full ring-2 ring-white dark:text-white text-black">Remove All Todos</p>
+        <div class="flex gap-4">
+          <p id="color-picker" data-bg = "bg-red-400" class="bg-red-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+          <p id="color-picker" data-bg = "bg-orange-400" class="bg-orange-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+          <p id="color-picker" data-bg = "bg-violet-400" class="bg-violet-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+          <p id="color-picker" data-bg = "bg-pink-400" class="bg-pink-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+          <p id="color-picker" data-bg = "bg-sky-400" class="bg-sky-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+          <p id="color-picker" data-bg = "bg-teal-400" class="bg-teal-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+          <p id="color-picker" data-bg = "bg-yellow-400" class="bg-yellow-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+          <p id="color-picker" data-bg="bg-lime-400" class="bg-lime-400 ring-white ring-2 rounded-full w-4 h-4 cursor-pointer"></p>
+        </div>      
+        <p id="show-hide-btn" class="cursor-pointer font-bold bg-lime-400 p-2 rounded-full ring-2 ring-white dark:text-white text-black">Show/Hide Todos</p>
+      </section>
+      <ul id="todo-items-wrapper" class="flex flex-col gap-4 w-5/6 h-full p-4 ring-2 ring-white bg-zinc-600 dark:bg-zinc-700 scrollbar scrollbar-thumb-sky-400 dark:scrollbar-thumb-gray-500 scrollbar-track-white overflow-auto scrollbar-w-3"></ul>
+    </section>
+  </body>
+</html>
